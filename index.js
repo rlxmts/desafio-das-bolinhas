@@ -14,9 +14,7 @@ canva.addEventListener('mousemove', (e)=> {
 
  canva.addEventListener("mouseout", ()=> {
     bolinha.style.opacity = "0";
- })
-
-
+ });
 
  function criarBolinha(posicaoX, posicaoY){
     const li = document.createElement('li');
@@ -26,9 +24,7 @@ canva.addEventListener('mousemove', (e)=> {
     listaDeBolinha.appendChild(li);
  }
 
-
  canva.addEventListener('click', (e)=> {
-    console.log('clicou');
     const posX = e.clientX;
     const posY = e.clientY;
     criarBolinha(posX, posY);
@@ -37,13 +33,11 @@ canva.addEventListener('mousemove', (e)=> {
 botaoDesfazer.addEventListener('click', (e)=> {
     e.preventDefault();
     const ultimaBolinha = listaDeBolinha.lastChild;
-
     ultimaBolinha.style.display = "none";
 })
 
 botaoRefazer.addEventListener('click', (e)=> {
     e.preventDefault();
     const ultimaBolinha = listaDeBolinha.lastChild;
-
     ultimaBolinha.style.display = "block";
-})
+});
