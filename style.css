@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.botoes{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 9999;
+}
+.div-bolinha{
+    opacity: 0;
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffffff75;
+    border-radius: 50%;
+    transition: .1s;
+}
+
+.bolinha{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffffff75;
+    border-radius: 50%;
+    transition: .1s;
+    background-color: #fff;
+}
+
+.canva{
+    height: 100vh;
+    background-color: rgb(6, 13, 71);
+}
