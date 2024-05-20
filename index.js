@@ -9,7 +9,8 @@ canva.addEventListener('mousemove', (e)=> {
    const posY = e.clientY;
 
    bolinha.style.opacity = "1";
-   bolinha.style.transform = `translate3d(calc(${posX}px - 20px), calc(${posY}px - 70px), 0)`;
+   bolinha.style.left = `${posX}px`;
+   bolinha.style.top = `${posY}px`;
  });
 
  canva.addEventListener("mouseout", ()=> {
@@ -20,7 +21,9 @@ canva.addEventListener('mousemove', (e)=> {
     const li = document.createElement('li');
     li.classList.add('bolinha');
     li.style.position = 'fixed';
-    li.style.transform = `translate3d( calc(${posicaoX}px - 19px ), calc(${posicaoY}px - 120px), 0)`;
+    li.style.left = `${posicaoX}px`;
+    li.style.top = `${posicaoY}px`;
+    li.style.transform = "translate( -50%, -50%)";
     listaDeBolinha.appendChild(li);
  }
 
